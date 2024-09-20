@@ -1,3 +1,6 @@
 build/
 devel/
 .vscode/
+miarobot_gazebo/
+miarobot_description/
+PID.py

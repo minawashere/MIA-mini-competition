@@ -18,7 +18,7 @@ ARRIVED = "ARRIVED"
 state = MOVING  
 
 def generate_setpoints():
-    max_y = 0.6
+    max_y = 0.5
     step_x = 0.5
     step_y = 0.15
     start_x = 0.45
@@ -64,6 +64,7 @@ def move_to_next_setpoint(pub):
         rospy.sleep(1)  
 
         setpoint_index += direction
+
         if setpoint_index == len(setpoints):
             direction = -1  
             setpoint_index = len(setpoints) - 1  
